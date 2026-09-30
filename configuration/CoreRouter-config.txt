@@ -1,0 +1,163 @@
+CoreRouter#show running-config
+Building configuration...
+
+Current configuration : 2276 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname CoreRouter
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX10177I26-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.10
+ description Gateway - Voice VLAN
+ encapsulation dot1Q 10
+ ip address 192.168.46.1 255.255.255.192
+ ip helper-address 192.168.46.178
+!
+interface FastEthernet0/0.20
+ description Gateway - Finance Dept
+ encapsulation dot1Q 20
+ ip address 192.168.46.65 255.255.255.224
+ ip helper-address 192.168.46.178
+!
+interface FastEthernet0/0.30
+ description Gateway - Corp Services
+ encapsulation dot1Q 30
+ ip address 192.168.46.97 255.255.255.224
+ ip helper-address 192.168.46.178
+!
+interface FastEthernet0/0.40
+ description Gateway - Community Services
+ encapsulation dot1Q 40
+ ip address 192.168.46.129 255.255.255.224
+ ip helper-address 192.168.46.178
+!
+interface FastEthernet0/0.50
+ description Gateway - Mgr Office
+ encapsulation dot1Q 50
+ ip address 192.168.46.161 255.255.255.240
+ ip helper-address 192.168.46.178
+!
+interface FastEthernet0/0.60
+ description Gateway - Server Farm
+ encapsulation dot1Q 60
+ ip address 192.168.46.177 255.255.255.240
+!
+interface FastEthernet0/0.99
+ description Gateway - Switch Mgmt
+ encapsulation dot1Q 99
+ ip address 192.168.46.193 255.255.255.240
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+telephony-service
+ max-ephones 4
+ max-dn 4
+ ip source-address 192.168.46.1 port 2000
+ auto assign 1 to 4
+!
+ephone-dn 1
+ number 1001
+!
+ephone-dn 2
+ number 1002
+!
+ephone-dn 3
+ number 1003
+!
+ephone-dn 4
+ number 1004
+!
+ephone 1
+ device-security-mode none
+ mac-address 000A.4146.83B4
+ type 7960
+ button 1:1
+!
+ephone 2
+ device-security-mode none
+ mac-address 0030.F251.9119
+ type 7960
+ button 1:2
+!
+ephone 3
+ device-security-mode none
+ mac-address 0060.3E18.7B10
+ type 7960
+ button 1:3
+!
+ephone 4
+ device-security-mode none
+ mac-address 0001.435B.B079
+ type 7960
+ button 1:4
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
