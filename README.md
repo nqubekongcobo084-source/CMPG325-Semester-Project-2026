@@ -56,7 +56,6 @@ segmentation, centralised DHCP services, and VoIP support for management.
 ---
 
 ## Repository Structure
-.
 ├── README.md
 ├── documentation/
 │ └── milestone2-implementation-report.md
