@@ -122,7 +122,7 @@ Seven sub-interfaces were created, one per VLAN:
 
 The `encapsulation dot1Q` command tags frames with the correct VLAN as
 they leave the interface. The `ip helper-address` command tells the router
-where to forward DHCP broadcasts — this is the DHCP relay agent.
+where to forward DHCP broadcasts - this is the DHCP relay agent.
 
 ### 4.3 DHCP Scoped Multi-VLAN Assignment (Assigned Challenge)
 
@@ -214,7 +214,7 @@ in `testing/troubleshooting-log.md`. Highlights:
 2. Native VLAN mismatch warnings during staged trunk configuration
 3. VLAN 99 SVI required the VLAN database entry, not just the SVI
 4. Packet Tracer's limited support for `show running-config interface`
-5. CME not available on 2911 — required 2811 router model
+5. CME not available on 2911 - required 2811 router model
 6. Access switch trunks initially blocked DHCP traffic
 7. First-ping packet loss is expected ARP behaviour
 8. Packet Tracer does not implement `show telephony-service`
