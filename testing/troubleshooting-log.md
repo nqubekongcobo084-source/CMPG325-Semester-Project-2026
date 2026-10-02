@@ -62,7 +62,7 @@ each of which set `switchport trunk native vlan 99` on FastEthernet0/24.
 The interface was administratively up, but protocol was down.
 
 **Diagnosis:** Ran `show vlan brief` and discovered that VLAN 99 was not
-in the VLAN database — even though `interface vlan 99` had been configured.
+in the VLAN database - even though `interface vlan 99` had been configured.
 
 **Cause:** The VLAN itself was never created. A Cisco switch cannot bring
 up an SVI for a VLAN that does not exist.
@@ -131,7 +131,7 @@ the 2811 does.
    sub-interfaces instead of `GigabitEthernet0/0.X`
 6. Verified all sub-interfaces came up: `show ip interface brief`
 
-**Note:** No changes were needed on any other device — switch, server, and
+**Note:** No changes were needed on any other device - switch, server, and
 PC configurations were unaffected by the router swap.
 
 **Verification:** After the swap, `telephony-service` was accepted.
