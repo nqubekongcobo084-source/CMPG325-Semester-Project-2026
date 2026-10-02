@@ -10,7 +10,7 @@
 
 ## 1. DHCP Assignment Tests
 
-These tests verify the assigned networking challenge — DHCP with scoped
+These tests verify the assigned networking challenge - DHCP with scoped
 multi-VLAN address assignment. Each VLAN has its own DHCP pool on the
 centralised server. The router relays DHCP broadcasts via `ip helper-address`.
 
@@ -68,7 +68,7 @@ user-VLAN router sub-interfaces.
 
 ## 5. VoIP / CME Verification (CR11)
 
-Verifies the change request — management adopting VoIP handsets — is
+Verifies the change request - management adopting VoIP handsets - is
 accommodated.
 
 | # | Command / Action | Expected Result | Pass | Evidence |
