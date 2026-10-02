@@ -1,10 +1,10 @@
-# CMPG 325 Computer Networks Project — Kagisano-Molopo Local Municipality
+# CMPG 325 Computer Networks Project - Kagisano-Molopo Local Municipality
 
 **Project ID:** CMPG325-2026-103
 **Client ID:** CLI-103
 **Organisation:** Kagisano-Molopo Local Municipality Offices (Ganyesa)
 **Industry:** Municipal Services
-**Student:** NGCOBO, MAPHOLOBA (AN) — 44986866
+**Student:** NGCOBO, MAPHOLOBA (AN) - 44986866
 **Institution:** North West University
 **Academic Year:** 2026
 
@@ -45,13 +45,13 @@ segmentation, centralised DHCP services, and VoIP support for management.
 
 ### Devices
 
-- CoreRouter (Cisco 2811) — router-on-a-stick, DHCP relay, CME
-- DistSW (Cisco 2960-24TT) — trunk aggregation
-- Finance-ASW, Corp-ASW, Community-ASW, MgrOffice-ASW (Cisco 2960-24TT) — access layer
-- Server-ASW (Cisco 2960-24TT) — server farm access
-- DHCP-Server (Server-PT) — scoped multi-VLAN DHCP
-- PC1-PC8 — workstations
-- Phone1-Phone4 (Cisco 7960) — VoIP handsets
+- CoreRouter (Cisco 2811) - router-on-a-stick, DHCP relay, CME
+- DistSW (Cisco 2960-24TT) - trunk aggregation
+- Finance-ASW, Corp-ASW, Community-ASW, MgrOffice-ASW (Cisco 2960-24TT) - access layer
+- Server-ASW (Cisco 2960-24TT) - server farm access
+- DHCP-Server (Server-PT) - scoped multi-VLAN DHCP
+- PC1-PC8 - workstations
+- Phone1-Phone4 (Cisco 7960) - VoIP handsets
 
 ---
 
